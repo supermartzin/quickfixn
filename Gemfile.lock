@@ -10,9 +10,14 @@ GEM
     jmespath (1.2.4)
       json_pure (>= 1.8.1)
     json_pure (1.8.3)
+    mini_portile2 (2.5.0)
     mustache (0.99.8)
-    nokogiri (1.5.0)
-    nokogiri (1.5.0-x86-mingw32)
+    nokogiri (1.11.0)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
+    nokogiri (1.11.0-x86-mingw32)
+      racc (~> 1.4)
+    racc (1.5.2)
     rubyzip (1.2.0)
 
 PLATFORMS
@@ -22,7 +27,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk (~> 2)
   mustache (= 0.99.8)
-  nokogiri (= 1.5.0)
+  nokogiri (= 1.11.0)
   rubyzip (~> 1.2)
 
 BUNDLED WITH
